@@ -1,0 +1,95 @@
+:root {
+  --ratio: 0.95;
+  --grid-item-height: 25vw;
+  --thumb-height: 7vh;
+  --grid-item-width: calc(var(--grid-item-height) * var(--ratio));
+  --thumb-height: 5vw;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // grid-auto-rows: 5vh;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: hidden;
+  padding: 0 90px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 0;
+}
+
+.column__figure {
+  figcaption {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.column__figure {
+  margin: 5vw 2.75vw 0 !important;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 1s ease;
+  border-radius: 1rem;
+  &:hover {
+    transform: scaleX(0.85);
+  }
+}
+
+.column__figure > img {
+  border-radius: 1em !important;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 0.75;
+  object-fit: cover;
+  transition: transform 1s ease, width 1s ease, height 1s ease;
+  &:hover {
+    transform: scaleX(1.5);
+  }
+}
+
+// /* Scroll-Timeline Supported, Yay! */
+// @supports (animation-timeline: works) {
+//   /* Hide Warning */
+//   .warning {
+//     display: none;
+//   }
+
+//   /* As we're about to shift content out of .columns, we need it to hide its overflow */
+//   .columns {
+//     overflow-y: hidden;
+//   }
+
+//   .column-reverse {
+//     /* Flip item order in reverse columns */
+//     flex-direction: column-reverse;
+//   }
+
+//   /* Set up Animation */
+//   @keyframes adjust-position {
+//     /* Start position: shift entire column up, but not so that it goes out of view */
+//     from {
+//       transform: translateY(calc(-100% + 100vh));
+//     }
+//     /* End position: shift entire column down, but not so that it goes out of view */
+//     to {
+//       transform: translateY(calc(100% - 100vh));
+//     }
+//   }
+
+//   /* Set up scroll-timeline */
+//   @scroll-timeline scroll-in-document {
+//     source: auto; /* Default scroll-timeline: scrolling in the document */
+//   }
+
+//   /* Hook our animation with the timeline to our columns */
+//   .column-reverse {
+//     animation: 1s adjust-position linear forwards;
+//     animation-timeline: scroll-in-document;
+//   }
+// }

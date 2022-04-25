@@ -1,4 +1,7 @@
-body {
-  background-color: aqua;
-  font-family: "Montserrat", sans-serif;
-}
+@import "_variables";
+@import "_reset";
+@import "_utilis";
+@import "_page";
+@import "_columns";
+@import "_modal";
+@import "_footer";

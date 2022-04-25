@@ -12,7 +12,7 @@ module.exports = {
   },
   //Modo del archivo
   mode: "development",
-  // watch: true,
+  watch: true,
   resolve: {
     extensions: [".js"],
   },
@@ -42,8 +42,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: "./src/index.php",
-      filename: "./index.php",
+      template: "./src/header.php",
+      filename: "../dist/header.php",
     }),
     new MiniCssExtractPlugin({ filename: "style.css" }),
     //Mover archivos

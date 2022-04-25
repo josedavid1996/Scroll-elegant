@@ -1,0 +1,49 @@
+.fixed {
+  position: fixed;
+  top: 5%;
+  left: calc(67% - 36vw);
+  animation: escalar 1s linear;
+  img {
+    width: 51vw;
+    height: 62vh;
+    max-width: 600px;
+    max-height: 580px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 6vh;
+  }
+}
+@keyframes escalar {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0.2);
+  }
+  40% {
+    transform: scale(0.4);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.transladar {
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll__icon-arrow {
+  position: fixed;
+  top: 12vh;
+  left: 20vw;
+  cursor: pointer;
+}

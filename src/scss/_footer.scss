@@ -1,0 +1,20 @@
+.footer {
+  position: fixed;
+  bottom: 4rem;
+  left: calc(64% - 36vw);
+  .wp-block-group__inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    figure {
+      margin: 0 0.5rem;
+      width: 80px;
+      img {
+        height: 80px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+}

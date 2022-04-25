@@ -1,0 +1,43 @@
+h2:nth-child(2) {
+  position: fixed;
+  top: -7rem;
+  right: calc(29% - 12.25vw);
+  z-index: 99;
+}
+h2:nth-child(3) {
+  position: fixed;
+  bottom: -7rem;
+  right: calc(29% - 12.25vw);
+  z-index: 99;
+}
+
+h1 {
+  position: fixed;
+  bottom: 77%;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  left: -5.5rem;
+  font-weight: 400;
+  z-index: 99;
+}
+.scroll_nav {
+  position: fixed;
+  bottom: 19%;
+  text-transform: uppercase;
+  transform: rotate(270deg);
+  left: -8.5rem;
+  z-index: 99;
+}
+
+.scroll__sponsor {
+  position: fixed;
+  right: -6.5rem;
+  bottom: calc(50% - 3.5rem);
+  transform: rotate(90deg);
+  padding: 1.5rem 1.5rem;
+  background-color: #e2ce7f;
+  z-index: 99;
+  a {
+    font-weight: 700;
+  }
+}
